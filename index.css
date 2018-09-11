@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg-img {
+  background: url(./img/lake.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.heading-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+}
+
+.heading-text h1 {
+  margin: 0;
+  padding-left: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  letter-spacing: 1rem;
+  color: rgb(255, 255, 100);
+}
+
+.heading-text p {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 20rem;
+}
+
+.portfolio {
+  padding: 2rem;
+}
+
+.grid{
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#stuff {
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.grid-item {
+  width: 100%;
+  border: rgb(50, 50, 50) 1px solid;
+  border-radius: 5px;
+}
+
+.grid-item h3:hover {
+  background-color: rgb(66, 222, 243);
+  transition: all 1s ease-out;
+}
+
+.grid-item h3 {
+  text-align: center;
+  color: #fff;
+  background-color: rgb(50, 50, 50);
+  border-bottom: rgb(255, 255, 100) 5px solid;
+  margin: 0;
+  padding: 1rem;
+}
+
+.grid-item p {
+  margin: 0;
+  padding: 1rem;
+  color: rgb(50, 50, 50);
+}
+
+.grid-item i {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5px;
+  color: rgb(50, 50, 50);
+}
+
+.contact {
+  background-color: rgb(50, 50, 50);
+  padding: 2rem;
+  border-bottom: rgb(255, 255, 100) 5px solid;
+}
+
+.information {
+  color: #fff;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.skill {
+  margin:0 ;
+  padding: 0;
+}
+
+.skill li {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.information .icons a i {
+  margin: 0.5rem;
+}
+
+#phone {
+  font-size: 2rem;
+  margin: 0;
+}
