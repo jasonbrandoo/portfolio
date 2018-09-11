@@ -8,39 +8,69 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.bg-img {
-  background: url(./img/lake.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+/* BACKGROUND */
+
+.bg {
   height: 100vh;
 }
 
-.heading-text {
+/* HEADING */
+
+.heading {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  height: 100%;
+  background-color: rgb(50, 50, 50);
+  height: 100vh;
 }
 
-.heading-text h1 {
+.heading h1 {
   margin: 0;
-  padding-left: 2rem;
   font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 1rem;
   color: rgb(255, 255, 100);
 }
 
-.heading-text p {
+.heading p {
   color: rgb(255, 255, 255);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 0;
-  padding-left: 2rem;
-  padding-right: 20rem;
+  padding: 0 5rem;
+  text-align: center;
 }
+
+.heading-icons {
+  margin: 1rem;
+  font-size: 5rem;
+}
+
+i:nth-child(1) {
+  color: rgb(255, 150, 0);
+}
+
+i:nth-child(2) {
+  color: rgb(0, 0, 255);
+}
+
+i:nth-child(3) {
+  color: rgb(255, 255, 0);
+}
+
+i:nth-child(4) {
+  color: rgb(255, 0, 0);
+}
+
+i:nth-child(5) {
+  color: rgb(0, 255, 0);
+}
+
+i:nth-child(6) {
+  color: rgb(0, 255, 255);
+}
+
+/* PORTFOLIO */
 
 .portfolio {
   padding: 2rem;
@@ -60,17 +90,7 @@ html, body {
   text-align: center;
   margin: 0;
   padding-bottom: 1rem;
-}
-
-.grid-item {
-  width: 100%;
-  border: rgb(50, 50, 50) 1px solid;
-  border-radius: 5px;
-}
-
-.grid-item h3:hover {
-  background-color: rgb(66, 222, 243);
-  transition: all 1s ease-out;
+  color: rgb(50, 50, 50);
 }
 
 .grid-item h3 {
@@ -82,18 +102,26 @@ html, body {
   padding: 1rem;
 }
 
+.grid-item h3:hover {
+  background-color: rgb(66, 222, 243);
+  color: rgb(50, 50, 50);
+  transition: all 1s ease-out;
+}
+
 .grid-item p {
+  text-align: center;
   margin: 0;
   padding: 1rem;
   color: rgb(50, 50, 50);
 }
 
 .grid-item i {
-  text-align: center;
   width: 100%;
-  margin-bottom: 5px;
+  margin-top: 5px;
   color: rgb(50, 50, 50);
 }
+
+/* CONTACT */
 
 .contact {
   background-color: rgb(50, 50, 50);
@@ -126,11 +154,22 @@ a {
   color: #fff;
 }
 
-.information .icons a i {
-  margin: 0.5rem;
+.icons a {
+  margin: 1rem;
 }
 
-#phone {
-  font-size: 2rem;
-  margin: 0;
+.icons .fa-github {
+  color: rgb(0, 0, 0);
+}
+
+.icons .fa-linkedin {
+  color: rgb(0, 0, 255);
+}
+
+.icons .fa-instagram {
+  color: rgb(255, 0, 255)
+}
+
+.icons .fa-whatsapp {
+  color: rgb(0, 255, 0)
 }
