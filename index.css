@@ -1,10 +1,10 @@
 * {
+  margin:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
-  margin:0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,24 +26,21 @@ html, body {
 }
 
 .heading h1 {
-  margin: 0;
   font-size: 4rem;
-  font-weight: bold;
   color: rgb(255, 255, 100);
+  margin-bottom: 1rem;
 }
 
 .heading p {
   color: rgb(255, 255, 255);
-  font-weight: bold;
-  font-size: 1rem;
-  margin: 0;
   padding: 0 5rem;
   text-align: center;
 }
 
 .heading-icons {
   margin: 1rem;
-  font-size: 5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 i:nth-child(1) {
@@ -73,24 +70,26 @@ i:nth-child(6) {
 /* PORTFOLIO */
 
 .portfolio {
-  padding: 2rem;
-}
-
-.grid{
-  height: 100%;
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 4rem;
 }
 
 #stuff {
   font-size: 3rem;
   text-align: center;
-  margin: 0;
   padding-bottom: 1rem;
   color: rgb(50, 50, 50);
+}
+
+.grid{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+  border: 2px rgb(50, 50, 50) solid;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .grid-item h3 {
@@ -98,7 +97,6 @@ i:nth-child(6) {
   color: #fff;
   background-color: rgb(50, 50, 50);
   border-bottom: rgb(255, 255, 100) 5px solid;
-  margin: 0;
   padding: 1rem;
 }
 
@@ -110,7 +108,6 @@ i:nth-child(6) {
 
 .grid-item p {
   text-align: center;
-  margin: 0;
   padding: 1rem;
   color: rgb(50, 50, 50);
 }
@@ -139,14 +136,16 @@ i:nth-child(6) {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.skill {
-  margin:0 ;
-  padding: 0;
+.information h1{
+  margin-bottom: 1rem;
 }
 
-.skill li {
-  list-style: none;
-  margin-bottom: 1rem;
+.skill p{
+  margin-bottom: 0.7rem;
+}
+
+.skill i {
+  color: rgb(255, 255, 0)
 }
 
 a {
@@ -155,7 +154,7 @@ a {
 }
 
 .icons a {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .icons .fa-github {
@@ -172,4 +171,21 @@ a {
 
 .icons .fa-whatsapp {
   color: rgb(0, 255, 0)
+}
+
+@media screen and (max-width: 500px){
+  .heading h1 {
+    font-size: 3rem;
+    color: rgb(255, 255, 100);
+  }
+
+  .heading p {
+    color: rgb(255, 255, 255);
+    padding: 0 1rem;
+    text-align: justify;
+  }
+
+  .grid{
+    display: initial;
+  }
 }
